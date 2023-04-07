@@ -1,38 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #448aff;
+    text-align: center;
+}
+
 .App {
-  text-align: center;
+    width: 410px;
+    margin: 50px auto;
+    padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+    background-color: #fff;
+    color: #448aff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    justify-content: center;
+    background: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="text"] {
+    height: 3.5rem;
+    width: 20rem;
+    background: #212121;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #c2c2c2;
+    margin-right: 4px;
+    border-radius: 20px;
+}
+
+input[type="submit"] {
+    height: 3.2rem;
+    width: 6.5rem;
+    background: #0a67ca;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.weather__list {
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.weather__list div {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather__list p {
+  margin-left: 10px;
+  text-transform: capitalize;
 }
